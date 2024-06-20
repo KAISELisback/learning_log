@@ -1,0 +1,21 @@
+# Ignorar a pasta do ambiente virtual
+venv/
+env/
+.venv/
+
+# Ignorar arquivos Python compilados
+*.pyc
+__pycache__/
+
+# Ignorar o banco de dados SQLite
+db.sqlite3
+
+# Ignorar arquivos de dump de banco de dados MySQL
+*.sql
+*.dump
+
+# Ignorar arquivos de configuração do MySQL
+my.cnf
+
+# Ignorar arquivos de configuração do VS Code
+.vscode/
