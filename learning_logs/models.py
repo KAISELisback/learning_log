@@ -1,10 +1,12 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Topic(models.Model):
     """Um assunto sobre o qual o usuário está aprendendo"""
     text = models.CharField(max_length=200) #Cria uma entrada de texto de 200 linhas
     date_added = models.DateTimeField(auto_now_add=True) #Registrar data e hora automaticamente
+    owner = models.ForeignKey(User, on_delete=models.CASCADE)
     
     def __str__(self):
         """Devolve uma representação em string do modelo"""
